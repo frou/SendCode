@@ -1,13 +1,15 @@
 [
     {
-        "keys": ["super+enter"], "command": "send_code",
+        "keys": ["alt+enter"], "command": "send_code",
         "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
             { "key": "selector", "operator": "equal", "operand": "source" }
         ]
     },
     {
-        "keys": ["super+enter"], "command": "send_code",
+        "keys": ["alt+enter"], "command": "send_code",
         "context": [
+            { "key": "panel_has_focus", "operator": "equal", "operand": false },
             { "key": "selector", "operator": "equal", "operand": "markup.raw.code-fence.markdown, markup.raw.block.fenced.markdown" }
         ]
     },
